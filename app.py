@@ -63,10 +63,17 @@ def recommended(movie):
         tagline = fetch_tagline(movie_id)
         if poster_url:
             movie_posters.append(poster_url)
-            movie_Homepage.append(poster_homepage)
 
         else:
             movie_posters.append("")
+
+        if poster_homepage:
+            movie_Homepage.append(poster_homepage)
+
+        else:
+            movie_Homepage.append("")
+
+        
         
         if tagline:
             movie_tagline.append(tagline)
